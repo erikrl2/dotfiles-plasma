@@ -1,0 +1,20 @@
+[user]
+	name = Erik
+	email = 92889691+erikrl2@users.noreply.github.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[diff]
+	tool = vimdiff
+[alias]
+	b = branch
+	co = checkout
+	cb = checkout -b
+	aa = add --all
+	ci = commit
+	pom = push origin main
+	st = status -sb
+	di = diff
+	l = log --simplify-merges --graph --pretty="tformat:%C(yellow)%h%Creset\\ %Cgreen(%ar)%Creset\\ %C(blue)<%an>%Creset\\ %C(red)%d%Creset\\ %s"
+	last = log -1 HEAD --stat

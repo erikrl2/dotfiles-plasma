@@ -12,6 +12,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
@@ -57,7 +58,8 @@ set splitbelow splitright
 set autoindent
 
 syntax enable
-"colorscheme iceberg
+colorscheme murphy
+" colorscheme wombatty
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key Mappings {{{1
@@ -81,9 +83,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-t> :tabnew<CR>
-vnoremap <C-c> "*y
-nnoremap <C-p> "*P
-vnoremap <C-p> "*P
+" vnoremap <C-c> "+y
+" nnoremap <C-p> "*P
+" vnoremap <C-p> "*P
 nnoremap <C-s> :w<CR>
 noremap <silent> <C-Left> :vertical resize +3<CR>
 noremap <silent> <C-Right> :vertical resize -3<CR>

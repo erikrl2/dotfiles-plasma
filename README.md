@@ -1,11 +1,11 @@
 # Dotfiles
 
-*Important*: Create alias `config=git --git-dir=$HOME/.dotfiles --work-tree=$HOME`
+## Usage
 
-## Get Started
+Create alias `config=git --git-dir=$HOME/.dotfiles --work-tree=$HOME`
 
 ```sh
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/erikrl2/dotfiles-plasma dotfiles-tmp
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/erikrl2/dotfiles-plasma.git dotfiles-tmp
 ```
 
 Then move files to `$HOME` and delete `dotfiles-tmp`.
@@ -16,7 +16,7 @@ Then move files to `$HOME` and delete `dotfiles-tmp`.
 config config status.showUntrackedFiles no
 ```
 
-## Usage
+## Examples
 
 ```sh
 config status
@@ -26,10 +26,10 @@ config push
 
 ```
 
-## How to create such setup?
+## (How this setup was created)
 
 ```sh
 git init --bare ~/.dotfiles
-config remote add origin https://github.com/user/repo.git
+config remote add origin https://github.com/erikrl2/dotfiles-plasma.git
 ```
 

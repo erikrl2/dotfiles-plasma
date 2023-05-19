@@ -15,7 +15,13 @@ fi
 
 alias vim="nvim"
 alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias grep="grep --color=always"
+alias grep="grep --color=auto"
+alias egrep="grep --color=auto"
+alias fgrep="grep --color=auto"
+alias cp="cp -i"
+alias ls="exa -la --group-directories-first"
+alias ll="exa -l --group-directories-first"
+alias la="exa -a --group-directories-first"
 
 ## Functions
 
@@ -57,4 +63,8 @@ bindkey '^ ' autosuggest-accept
 bindkey '^O' open_with_fzf
 bindkey '^F' cd_with_fzf
 bindkey '^V' open_vim
+
+# opam configuration
+
+[[ ! -r /home/erikrl/.opam/opam-init/init.zsh ]] || source /home/erikrl/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 

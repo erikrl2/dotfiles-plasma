@@ -11,18 +11,6 @@ fi
 
 # My configs
 
-## Aliases
-
-alias vim="nvim"
-alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias grep="grep --color=auto"
-alias egrep="grep --color=auto"
-alias fgrep="grep --color=auto"
-alias cp="cp -i"
-alias ls="exa -la --group-directories-first"
-alias ll="exa -l --group-directories-first"
-alias la="exa -a --group-directories-first"
-
 ## Functions
 
 open_with_fzf() {
@@ -63,6 +51,19 @@ bindkey '^ ' autosuggest-accept
 bindkey '^O' open_with_fzf
 bindkey '^F' cd_with_fzf
 bindkey '^V' open_vim
+
+## Aliases
+
+alias vim="nvim"
+alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias grep="grep --color=auto"
+alias egrep="grep --color=auto"
+alias fgrep="grep --color=auto"
+alias cp="cp -i"
+alias ls="exa -la --group-directories-first"
+alias ll="exa -l --group-directories-first"
+alias la="exa -a --group-directories-first"
+alias open="xdg-open"
 
 # opam configuration
 

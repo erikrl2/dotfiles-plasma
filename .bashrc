@@ -136,3 +136,6 @@ ex ()
   fi
 }
 
+# opam configuration
+test -r /home/erikrl/.opam/opam-init/init.sh && . /home/erikrl/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
